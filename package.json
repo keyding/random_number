@@ -1,6 +1,6 @@
 {
   "name": "@pineapplejs/random_number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get random integer",
   "main": "dist/random_number.cjs.js",
   "module": "dist/random_number.esm.js",
