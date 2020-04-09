@@ -1,12 +1,12 @@
 {
-  "name": "@pineapple/random_number",
+  "name": "@pineapplejs/random_number",
   "version": "1.0.0",
   "description": "Get random integer",
   "main": "dist/random_number.cjs.js",
   "module": "dist/random_number.esm.js",
   "browser": "dist/random_number.umd.js",
-  "author": "pineapple-ding",
-  "homepage": "https://github.com/pineapple-ding/random_number",
+  "author": "pineapplejs",
+  "homepage": "https://github.com/pineapplejs/random_number",
   "private": false,
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -33,5 +33,16 @@
   ],
   "files": [
     "dist"
-  ]
+  ],
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pineapplejs/random_number.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pineapplejs/random_number/issues"
+  }
 }
