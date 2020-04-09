@@ -26,14 +26,10 @@ export default {
             exclude: ['node_modules/**']
         }),
         babel({
-            // 排除 node_modules 下的所有，仅编译源代码
             exclude: 'node_modules/**',
-            // 使plugin-transform-runtime生效
             runtimeHelpers: true
         }),
-        // 压缩代码
         !isDev && terser()
     ],
-    // 三方模块不打包进源码
     external: []
 }
