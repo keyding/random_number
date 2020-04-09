@@ -1,0 +1,23 @@
+// 将 .babelrc 文件放在 src 中，而不是根目录下,这允许我们对于不同的任务有不同的 .babelrc 配置，比如测试
+{
+    "presets": [
+        [
+            "@babel/env", 
+            {
+                // modules 设置 false, 否则 Babel 会在 Rollup 有机会做处理之前，将我们的模块转成 CommonJS ，导致 Rollup 的一些处理失败
+                "modules": false,
+                "useBuiltIns": "usage",
+                "corejs": 3,
+                // 仅仅包含>0.25%市场份额浏览器的那些polyfill
+                "targets": "> 0.25%, not dead"
+            }
+        ]
+    ],
+    "plugins": [
+        // 解决多个地方使用相同代码导致打包重复的问题
+        ["@babel/plugin-transform-runtime"]
+    ],
+    "ignore": [
+        "node_modules/**"
+    ]
+}
